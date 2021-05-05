@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana2Controller">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="50.0" left="100.0" right="100.0" top="50.0" />
+    </padding>
+    <center>
+        <Button fx:id="buttonCerrarVentana" mnemonicParsing="false" onAction="#onButtonCerrarVentanaClicked" text="Cerrar Ventana" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets left="20.0" />
+            </BorderPane.margin>
+        </Button>
+    </center>
+    <left>
+        <Label fx:id="sumatorio" text="0" BorderPane.alignment="CENTER" />
+    </left>
+</BorderPane>

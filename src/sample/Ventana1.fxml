@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ventana1Controller">
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+    </padding>
+    <top>
+        <Button mnemonicParsing="false" onAction="#onButtonAbrirClicked" text="Abrir Ventana 2" BorderPane.alignment="CENTER" />
+    </top>
+    <left>
+        <Button fx:id="resta" mnemonicParsing="false" onMouseClicked="#restarUno" text="-1" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <Button fx:id="sumar" mnemonicParsing="false" onMouseClicked="#sumarUno" text="+1" BorderPane.alignment="CENTER">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </Button>
+    </right>
+</BorderPane>
