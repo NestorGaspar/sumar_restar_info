@@ -21,4 +21,7 @@
     <left>
         <Label fx:id="sumatorio" text="0" BorderPane.alignment="CENTER" />
     </left>
+   <right>
+      <CheckBox fx:id="checkBox" mnemonicParsing="false" onMouseClicked="#onClickCheckBox" text="Forzar Parada" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>

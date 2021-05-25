@@ -6,11 +6,16 @@ import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
+import java.awt.*;
 
 
 public class Ventana1Controller {
 
-    Ventana2Controller controller = null;
+
+    Ventana2Controller controller2 = null;
+
+    @FXML
+    Button suma, resta;
 
     @FXML
     private void onButtonAbrirClicked() {
@@ -21,7 +26,8 @@ public class Ventana1Controller {
             Scene scene = new Scene(root, 450, 410);
             stage.setScene(scene);
 
-            controller = loader.getController();
+            controller2 = loader.getController();
+
             stage.show();
         } catch (Exception e) {
             e.printStackTrace();
@@ -30,14 +36,23 @@ public class Ventana1Controller {
 
     @FXML
     public void sumarUno() {
-        if (controller != null)
-            controller.sumarUno();
+        if (controller2 != null)
+            controller2.sumarUno();
     }
 
     @FXML
     public void restarUno() {
-        if (controller != null)
-            controller.restarUno();
+        if (controller2 != null)
+            controller2.restarUno();
+    }
+
+    public void  setButtonDisable(){
+        suma.setEnabled(false);
+        resta.setEnabled(false);
+    }
+    public void setButtonEnable(){
+        suma.setEnabled(true);
+        resta.setEnabled(true);
     }
 
 }

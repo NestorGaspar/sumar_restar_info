@@ -18,7 +18,7 @@
         <Button fx:id="resta" mnemonicParsing="false" onMouseClicked="#restarUno" text="-1" BorderPane.alignment="CENTER" />
     </left>
     <right>
-        <Button fx:id="sumar" mnemonicParsing="false" onMouseClicked="#sumarUno" text="+1" BorderPane.alignment="CENTER">
+        <Button fx:id="suma" mnemonicParsing="false" onMouseClicked="#sumarUno" text="+1" BorderPane.alignment="CENTER">
             <opaqueInsets>
                 <Insets />
             </opaqueInsets>
