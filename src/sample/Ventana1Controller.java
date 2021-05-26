@@ -5,8 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
-import java.awt.*;
 
 
 public class Ventana1Controller {
@@ -27,6 +27,7 @@ public class Ventana1Controller {
             stage.setScene(scene);
 
             controller2 = loader.getController();
+            controller2.informacionEntreVentanas(this);
 
             stage.show();
         } catch (Exception e) {
@@ -46,13 +47,11 @@ public class Ventana1Controller {
             controller2.restarUno();
     }
 
-    public void  setButtonDisable(){
-        suma.setEnabled(false);
-        resta.setEnabled(false);
+    public void botonApagado(){
+        suma.setDisable(true);
     }
-    public void setButtonEnable(){
-        suma.setEnabled(true);
-        resta.setEnabled(true);
+    public void botonEncendido(){
+        suma.setDisable(false);
     }
 
 }

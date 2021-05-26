@@ -10,7 +10,7 @@ public class Ventana2Controller {
 
     int contador = 0;
 
-    private Ventana1Controller controller1;
+    Ventana1Controller controller1 = null;
 
     @FXML
     CheckBox checkBox;
@@ -27,6 +27,18 @@ public class Ventana2Controller {
         stage.close();
     }
 
+    @FXML
+    public void onClickCheckBox(){
+        if(checkBox.isSelected())
+            controller1.botonApagado();
+        else
+            controller1.botonEncendido();
+    }
+
+    public void informacionEntreVentanas(Ventana1Controller ventana1Controller){
+        controller1 = ventana1Controller;
+    }
+
     public void sumarUno() {
         contador++;
         sumatorio.setText(String.valueOf(contador));
@@ -36,14 +48,6 @@ public class Ventana2Controller {
     public void restarUno() {
         contador--;
         sumatorio.setText(String.valueOf(contador));
-    }
-
-    @FXML
-    public void onClickCheckBox(){
-        if(checkBox.isSelected())
-            controller1.setButtonDisable();
-        else
-            controller1.setButtonEnable();
     }
 
 }
